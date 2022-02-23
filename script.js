@@ -69,15 +69,22 @@ let alternar=()=>{
         showAll();
         allShown=true;
         let texto=document.createTextNode("Mostrando todas");
+        boton.innerHTML="";
         boton.appendChild(texto);
 
     }
+
+    else if(allShown==true)
+    {
+        allShown=false;
+        let texto=document.createTextNode("Mostrando Selección");
+        boton.innerHTML="";
+        boton.appendChild(texto);
+        llamarBinance();
+    }
 }
 
-let orderByGrowth = ()=>{
 
-
-}
 
 
 function genera_tabla() {
